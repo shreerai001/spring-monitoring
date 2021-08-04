@@ -1,0 +1,16 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8081
+        instance:
+          management-base-url: http://localhost:8081
+  application:
+    name: admin
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
