@@ -1,62 +1,32 @@
-2021-10-08 06:56:54.416  INFO 7124 --- [main] com.shree.client.ClientApplication       : Starting ClientApplication using Java 11.0.11 on pop-os with PID 7124 (/home/shree/IdeaProjects/spring-monitoring/client/target/classes started by shree in /home/shree/IdeaProjects/spring-monitoring)
-2021-10-08 06:56:54.423  INFO 7124 --- [main] com.shree.client.ClientApplication       : No active profile set, falling back to default profiles: default
-2021-10-08 06:56:57.711  INFO 7124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-08 06:56:57.726  INFO 7124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
-2021-10-08 06:56:58.526  INFO 7124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2021-10-08 06:56:58.535  INFO 7124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-08 06:56:58.536  INFO 7124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-08 06:56:58.639  INFO 7124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-08 06:56:58.640  INFO 7124 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4022 ms
-2021-10-08 06:56:58.786  INFO 7124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-10-08 06:56:58.933  INFO 7124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-10-08 06:56:58.939  INFO 7124 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:memDb'
-2021-10-08 06:56:59.106  INFO 7124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-08 06:56:59.147  INFO 7124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2021-10-08 06:56:59.254  INFO 7124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-10-08 06:56:59.472  INFO 7124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-10-08 06:56:59.800  INFO 7124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-08 06:56:59.809  INFO 7124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-08 06:57:00.041  WARN 7124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-08 06:57:00.229  INFO 7124 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2021-10-08 06:57:00.670  INFO 7124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2021-10-08 06:57:00.973  INFO 7124 --- [main] com.shree.client.ClientApplication       : Started ClientApplication in 7.783 seconds (JVM running for 8.979)
-2021-10-08 06:57:01.027  WARN 7124 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=client, managementUrl=http://pop-os.localdomain:8081/actuator, healthUrl=http://pop-os.localdomain:8081/actuator/health, serviceUrl=http://pop-os.localdomain:8081/) at spring-boot-admin ([http://localhost:8080/instances]): I/O error on POST request for "http://localhost:8080/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level
-2021-10-08 06:57:01.447  INFO 7124 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-08 06:57:01.447  INFO 7124 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-08 06:57:01.450  INFO 7124 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2021-10-08 06:58:31.195  INFO 7124 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 79f81eb85ea8
-2021-10-08 07:04:25.988  INFO 7124 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-10-08 07:04:25.989  INFO 7124 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2021-10-08 07:04:25.991  INFO 7124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-10-08 07:04:25.993  INFO 7124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-10-08 07:04:33.408  INFO 7959 --- [main] com.shree.client.ClientApplication       : Starting ClientApplication using Java 11.0.11 on pop-os with PID 7959 (/home/shree/IdeaProjects/spring-monitoring/client/target/classes started by shree in /home/shree/IdeaProjects/spring-monitoring)
-2021-10-08 07:04:33.415  INFO 7959 --- [main] com.shree.client.ClientApplication       : No active profile set, falling back to default profiles: default
-2021-10-08 07:04:34.965  INFO 7959 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-08 07:04:34.974  INFO 7959 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2021-10-08 07:04:35.461  INFO 7959 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2021-10-08 07:04:35.469  INFO 7959 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-08 07:04:35.469  INFO 7959 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
-2021-10-08 07:04:35.578  INFO 7959 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-08 07:04:35.579  INFO 7959 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2107 ms
-2021-10-08 07:04:35.692  INFO 7959 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-10-08 07:04:35.767  INFO 7959 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-10-08 07:04:35.771  INFO 7959 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:memDb'
-2021-10-08 07:04:35.964  INFO 7959 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-08 07:04:36.000  INFO 7959 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2021-10-08 07:04:36.132  INFO 7959 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-10-08 07:04:36.243  INFO 7959 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-10-08 07:04:36.396  INFO 7959 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-08 07:04:36.403  INFO 7959 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-08 07:04:36.581  WARN 7959 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-08 07:04:36.772  INFO 7959 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2021-10-08 07:04:37.193  INFO 7959 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2021-10-08 07:04:37.494  INFO 7959 --- [main] com.shree.client.ClientApplication       : Started ClientApplication in 4.732 seconds (JVM running for 5.728)
-2021-10-08 07:04:37.564  INFO 7959 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 79f81eb85ea8
-2021-10-08 07:04:37.581  INFO 7959 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-08 07:04:37.581  INFO 7959 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-08 07:04:37.583  INFO 7959 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-10-08 07:05:57.504  WARN 7959 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=client, managementUrl=http://pop-os.localdomain:8081/actuator, healthUrl=http://pop-os.localdomain:8081/actuator/health, serviceUrl=http://pop-os.localdomain:8081/) at spring-boot-admin ([http://localhost:8080/instances]): I/O error on POST request for "http://localhost:8080/instances": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server. Further attempts are logged on DEBUG level
-2021-10-08 07:22:15.919  INFO 7959 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-10-08 07:22:15.920  INFO 7959 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2021-10-08 07:22:15.923  INFO 7959 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-10-08 07:22:15.927  INFO 7959 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-09 21:23:55.109  INFO 21531 --- [main] com.shree.client.ClientApplication       : Starting ClientApplication using Java 11.0.11 on pop-os with PID 21531 (/home/shree/IdeaProjects/spring-monitoring/client/target/classes started by shree in /home/shree/IdeaProjects/spring-monitoring)
+2021-10-09 21:23:55.117  INFO 21531 --- [main] com.shree.client.ClientApplication       : No active profile set, falling back to default profiles: default
+2021-10-09 21:23:57.739  INFO 21531 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-09 21:23:57.762  INFO 21531 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2021-10-09 21:23:59.606  INFO 21531 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-10-09 21:23:59.650  INFO 21531 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-09 21:23:59.651  INFO 21531 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-09 21:23:59.897  INFO 21531 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-09 21:23:59.903  INFO 21531 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4679 ms
+2021-10-09 21:24:00.209  INFO 21531 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-09 21:24:00.399  INFO 21531 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-09 21:24:00.422  INFO 21531 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:memDb'
+2021-10-09 21:24:00.744  INFO 21531 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-09 21:24:00.788  INFO 21531 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-09 21:24:00.990  INFO 21531 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-09 21:24:01.233  INFO 21531 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-09 21:24:01.545  INFO 21531 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-09 21:24:01.563  INFO 21531 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-09 21:24:02.084  WARN 21531 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-09 21:24:02.598  INFO 21531 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-10-09 21:24:03.454  INFO 21531 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-10-09 21:24:03.998  INFO 21531 --- [main] com.shree.client.ClientApplication       : Started ClientApplication in 9.244 seconds (JVM running for 10.026)
+2021-10-09 21:24:04.376  INFO 21531 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-09 21:24:04.381  INFO 21531 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-09 21:24:04.386  INFO 21531 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-10-09 21:24:04.402  INFO 21531 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 79f81eb85ea8
+2021-10-09 21:24:24.028  WARN 21531 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=client, managementUrl=http://pop-os.localdomain:8081/actuator, healthUrl=http://pop-os.localdomain:8081/actuator/health, serviceUrl=http://pop-os.localdomain:8081/) at spring-boot-admin ([http://localhost:8080/instances]): I/O error on POST request for "http://localhost:8080/instances": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server. Further attempts are logged on DEBUG level
+2021-10-09 21:30:14.025  WARN 21531 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=client, managementUrl=http://pop-os.localdomain:8081/actuator, healthUrl=http://pop-os.localdomain:8081/actuator/health, serviceUrl=http://pop-os.localdomain:8081/) at spring-boot-admin ([http://localhost:8080/instances]): I/O error on POST request for "http://localhost:8080/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2021-10-09 21:30:14.485  INFO 21531 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-09 21:30:14.486  INFO 21531 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-09 21:30:14.489  INFO 21531 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-09 21:30:14.492  INFO 21531 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

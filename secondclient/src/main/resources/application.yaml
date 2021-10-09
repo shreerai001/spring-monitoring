@@ -1,0 +1,19 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  application:
+    name: secondclient
+server:
+  port: 8082
+allowed:
+  origin: http://localhost:4200
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
