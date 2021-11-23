@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics, prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
+server:
+  port: 8082
